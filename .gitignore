@@ -1,0 +1,11 @@
+# Segredos e dados privados
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+production-logs/
+exports-production/
+__pycache__/
+.DS_Store

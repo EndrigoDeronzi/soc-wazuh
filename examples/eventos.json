@@ -1,0 +1,40 @@
+{
+  "schema": "soc-portfolio-demo-v1",
+  "synthetic": true,
+  "notice": "Esquema didático próprio; não é exportação ou payload nativo Wazuh.",
+  "events": [
+    {
+      "id": "DEMO-001",
+      "timestamp": "2026-10-01T10:00:00-03:00",
+      "host": "LAB-WS01",
+      "source": "Windows Security",
+      "signal": "Falhas repetidas de autenticação",
+      "user": "lab.usuario01",
+      "source_ip": "192.0.2.25",
+      "count": 8,
+      "window_minutes": 5,
+      "priority": "alta",
+      "classification": "suspeita; investigar"
+    },
+    {
+      "id": "DEMO-002",
+      "timestamp": "2026-10-01T10:10:00-03:00",
+      "host": "LAB-WS02",
+      "source": "EDR simulado",
+      "signal": "Detecção reportada pelo EDR",
+      "action_status": "bloqueio reportado; confirmação pendente",
+      "priority": "alta",
+      "classification": "investigação pendente"
+    },
+    {
+      "id": "DEMO-003",
+      "timestamp": "2026-10-01T10:20:00-03:00",
+      "host": "LAB-SRV01",
+      "source": "FIM simulado",
+      "signal": "Arquivo monitorado alterado",
+      "path": "C:\\Lab\\config\\app.conf",
+      "priority": "media",
+      "classification": "correlacionar com mudança"
+    }
+  ]
+}
